@@ -2,7 +2,7 @@
 const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
-const Body = Matter.Body;
+
 var ground, paper, db1, db2, db3;
 function preload()
 {
@@ -38,8 +38,7 @@ function draw() {
   db1.display();
   db3.display();
   db2.display();
-  //drawSprites();
- keypressed();
+
 }
 function keyPressed(){
 	if (keyCode === UP_ARROW){
